@@ -11,6 +11,15 @@ app.factory(
     }
 );
 
+app.filter('reverse', function()
+    {
+        return function (message)
+        {
+            message.split("").reverse().join("");
+        }
+    }
+);
+
 // controller here
 app.controller('FirstCtrl', function($scope, data) {
     $scope.data = data;
@@ -20,5 +29,10 @@ app.controller('FirstCtrl', function($scope, data) {
 // controller here
 app.controller('SecondCtrl', function($scope,data) {
     $scope.data = data;
+
+    $scope.reverseMessage = function(message)
+    {
+        return message.name.split("").reverse().join("");
+    }
 
 });
