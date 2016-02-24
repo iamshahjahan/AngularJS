@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Hello </title>
+
+</head>
+<body>
+<h1> using angular js.</h1>
+
+
+<div ng-app="shahjahan">
+
+
+    <!--first controller -->
+
+    <div ng-controller="FirstCtrl">
+        <input type="text" ng-model="data.name">
+        <h1>Hello {{ data.name}}</h1>
+    </div>
+
+    <!--second controller-->
+
+
+    <div ng-controller="SecondCtrl">
+        <input type="text" ng-model="data.name">
+        <h1>Hello from {{data.name}}</h1>
+    </div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+<script type="text/javascript" src="basic.js"></script>
+</body>
+</html>
