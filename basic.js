@@ -1,4 +1,6 @@
-
+/**
+ * Created by Khan on 24/02/2016.
+ */
 var app =  angular
     .module('shahjahan', []);
 
@@ -19,6 +21,4 @@ app.controller('FirstCtrl', function($scope, data) {
 app.controller('SecondCtrl', function($scope,data) {
     $scope.data = data;
 
-});/**
- * Created by Khan on 24/02/2016.
- */
+});
